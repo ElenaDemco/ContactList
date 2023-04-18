@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class PersonContactListViewController: UITableViewController {
+final class ЕxpandedContactListViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

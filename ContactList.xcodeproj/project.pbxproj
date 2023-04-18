@@ -16,6 +16,7 @@
 		6641032A29EEC7290085C68C /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6641032929EEC7290085C68C /* ContactListViewController.swift */; };
 		6641032C29EECEEA0085C68C /* PersonContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6641032B29EECEEA0085C68C /* PersonContactListViewController.swift */; };
 		6641032E29EED5A90085C68C /* ContactDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6641032D29EED5A90085C68C /* ContactDetailsViewController.swift */; };
+		6641033029EF0D010085C68C /* DataStoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6641032F29EF0D010085C68C /* DataStoreViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		6641032929EEC7290085C68C /* ContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
 		6641032B29EECEEA0085C68C /* PersonContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonContactListViewController.swift; sourceTree = "<group>"; };
 		6641032D29EED5A90085C68C /* ContactDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsViewController.swift; sourceTree = "<group>"; };
+		6641032F29EF0D010085C68C /* DataStoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStoreViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				6641032929EEC7290085C68C /* ContactListViewController.swift */,
 				6641032D29EED5A90085C68C /* ContactDetailsViewController.swift */,
 				6641032B29EECEEA0085C68C /* PersonContactListViewController.swift */,
+				6641032F29EF0D010085C68C /* DataStoreViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 				6641032729EEB9860085C68C /* Person.swift in Sources */,
 				6641032C29EECEEA0085C68C /* PersonContactListViewController.swift in Sources */,
 				6641031229EEB8A40085C68C /* SceneDelegate.swift in Sources */,
+				6641033029EF0D010085C68C /* DataStoreViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

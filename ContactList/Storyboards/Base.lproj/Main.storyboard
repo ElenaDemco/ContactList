@@ -58,14 +58,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GYG-zJ-3We">
-                                <rect key="frame" x="16" y="112.5" width="66.5" height="30"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="WNV-AM-pZM" userLabel="Info">
-                                <rect key="frame" x="16" y="172.5" width="46" height="59"/>
+                                <rect key="frame" x="16" y="149" width="46" height="59"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ycj-wT-ufl">
                                         <rect key="frame" x="0.0" y="0.0" width="46" height="19.5"/>
@@ -85,14 +79,15 @@
                         <viewLayoutGuide key="safeArea" id="pih-K4-cZp"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="GYG-zJ-3We" firstAttribute="top" secondItem="pih-K4-cZp" secondAttribute="top" id="5aO-4n-Csg"/>
-                            <constraint firstItem="pih-K4-cZp" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="GYG-zJ-3We" secondAttribute="trailing" symbolic="YES" id="Jcq-MZ-TpN"/>
-                            <constraint firstItem="GYG-zJ-3We" firstAttribute="leading" secondItem="pih-K4-cZp" secondAttribute="leading" constant="16" id="OAi-Fl-kAT"/>
-                            <constraint firstItem="WNV-AM-pZM" firstAttribute="leading" secondItem="pih-K4-cZp" secondAttribute="leading" constant="16" id="cm0-Wf-HvL"/>
-                            <constraint firstItem="WNV-AM-pZM" firstAttribute="top" secondItem="GYG-zJ-3We" secondAttribute="bottom" constant="30" id="dSF-WS-X5C"/>
+                            <constraint firstItem="WNV-AM-pZM" firstAttribute="top" secondItem="pih-K4-cZp" secondAttribute="top" constant="36.5" id="DwK-B8-BEz"/>
+                            <constraint firstItem="WNV-AM-pZM" firstAttribute="leading" secondItem="pih-K4-cZp" secondAttribute="leading" constant="16" id="pF0-bd-2zO"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="IHx-HJ-KwC"/>
+                    <connections>
+                        <outlet property="emailPerson" destination="Luw-sg-frL" id="87e-qT-XzJ"/>
+                        <outlet property="phonePerson" destination="Ycj-wT-ufl" id="xA4-M6-c5H"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Ig-0m-TZV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -101,7 +96,7 @@
         <!--Persons-->
         <scene sceneID="smD-16-EJ0">
             <objects>
-                <tableViewController id="7dE-Nc-IvP" customClass="PersonContactListViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="7dE-Nc-IvP" customClass="ЕxpandedContactListViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="w2o-wY-CYD">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -175,7 +170,7 @@
                             <outlet property="delegate" destination="7dE-Nc-IvP" id="xGE-WM-mSS"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Persons" image="person.fill" catalog="system" id="oM2-r1-Dkl"/>
+                    <tabBarItem key="tabBarItem" title="Contacts" image="person.fill" catalog="system" id="oM2-r1-Dkl"/>
                     <navigationItem key="navigationItem" title="Persons" id="EaX-Hx-AeN"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3ae-oS-ggo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

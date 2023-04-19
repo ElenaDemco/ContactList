@@ -20,14 +20,23 @@ struct Person {
 
 extension Person {
     static func getContactList() -> [Person] {
-        let person: [Person] = []
+        var person: [Person] = []
         
-        let names = DataStore.info.names.shuffled()
-        let surnames = DataStore.info.surnames.shuffled()
-        let phones = DataStore.info.phones.shuffled()
-        let emails = DataStore.info.emails.shuffled()
+        let names = DataStore.shared.names.shuffled()
+        let surnames = DataStore.shared.surnames.shuffled()
+        let phones = DataStore.shared.phones.shuffled()
+        let emails = DataStore.shared.emails.shuffled()
+        
+        for i in 0..<names.count {
+            let newPerson = Person(
+                name: names[i],
+                surname: surnames[i],
+                phone: phones[i],
+                email: emails[i]
+            )
+            person.append(newPerson)
+        }
         return person
     }
 }
-
 

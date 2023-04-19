@@ -9,12 +9,13 @@ import UIKit
 
 final class ContactDetailsViewController: UIViewController {
     
-    
+    // MARK: - IBOutlets
     @IBOutlet var phonePerson: UILabel!
     @IBOutlet var emailPerson: UILabel!
     
     var person: Person!
     
+    // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         

@@ -9,6 +9,7 @@ import UIKit
 
 final class ContactListViewController: UITableViewController {
     
+    // MARK: - Public properties
     var persons: [Person] = []
     
     // MARK: - Navigation

@@ -8,12 +8,12 @@
 import UIKit
 
 class TabBarController: UITabBarController {
-    
-    let persons = Person.getContactList()
-    
+
     // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let persons = Person.getContactList()
         
         transferData(from: persons)
     }

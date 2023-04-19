@@ -9,6 +9,7 @@ import UIKit
 
 final class ExpandedContactListViewController: UITableViewController {
     
+    // MARK: - Public properties
     var persons: [Person] = []
     
     // MARK: - UITableViewDelegate

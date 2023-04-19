@@ -9,15 +9,15 @@ import UIKit
 
 final class ExpandedContactListViewController: UITableViewController {
     
-    var contactList: [Person] = []
+    var persons: [Person] = []
     
     // MARK: - UITableViewDelegate
     override func numberOfSections(in tableView: UITableView) -> Int {
-        contactList.count
+        persons.count
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        contactList[section].fullName
+        persons[section].fullName
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -32,7 +32,7 @@ final class ExpandedContactListViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "person", for: indexPath)
         var content = cell.defaultContentConfiguration()
-        let contact = contactList[indexPath.section]
+        let contact = persons[indexPath.section]
         
         switch indexPath.row {
         case 0:

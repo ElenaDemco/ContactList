@@ -9,12 +9,12 @@ import UIKit
 
 final class ContactListViewController: UITableViewController {
     
-    var contactList = Person.getContactList()
+    var persons: [Person] = []
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
-        let person = contactList[indexPath.row]
+        let person = persons[indexPath.row]
         
         if segue.identifier == "showDetails" {
             let detailsVC = segue.destination as? ContactDetailsViewController
@@ -26,14 +26,14 @@ final class ContactListViewController: UITableViewController {
 // MARK: - UITableViewDataStore
 extension ContactListViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        contactList.count
+        persons.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "contact", for: indexPath)
         
         var content = cell.defaultContentConfiguration()
-        let contact = contactList[indexPath.row]
+        let contact = persons[indexPath.row]
         
         content.text = contact.fullName
         cell.contentConfiguration = content
@@ -45,7 +45,7 @@ extension ContactListViewController {
 // MARK: - UITableViewDelegate
 extension ContactListViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let contact = contactList[indexPath.row]
+        let contact = persons[indexPath.row]
         performSegue(withIdentifier: "showDetails", sender: contact)
     }
 }

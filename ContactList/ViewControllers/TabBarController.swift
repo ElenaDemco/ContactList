@@ -9,7 +9,7 @@ import UIKit
 
 class TabBarController: UITabBarController {
     
-    var persons = Person.getContactList()
+    let persons = Person.getContactList()
     
     // MARK: - Life cycle
     override func viewDidLoad() {
@@ -23,7 +23,7 @@ class TabBarController: UITabBarController {
         let contactListVC = viewControllers?.first as? ContactListViewController
         let expandedContactListVC = viewControllers?.last as? ExpandedContactListViewController
         
-        contactListVC?.contactList = persons
-        expandedContactListVC?.contactList = persons
+        contactListVC?.persons = persons
+        expandedContactListVC?.persons = persons
     }
 }

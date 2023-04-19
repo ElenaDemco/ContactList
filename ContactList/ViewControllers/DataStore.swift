@@ -8,7 +8,7 @@ import UIKit
 
 final class DataStore {
     
-    static let info = DataStore()
+    static let shared = DataStore()
     
     let names = [
         "Dylan",

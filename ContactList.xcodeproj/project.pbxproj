@@ -92,7 +92,7 @@
 				6641032D29EED5A90085C68C /* ContactDetailsViewController.swift */,
 				6641032B29EECEEA0085C68C /* ExpandedContactListViewController.swift */,
 				66F4E39329F04ED7008A338C /* TabBarController.swift */,
-				6641032F29EF0D010085C68C /* DataStore.swift */,
+				6641C91329F12B8500987195 /* Services */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -112,6 +112,14 @@
 				6641032629EEB9860085C68C /* Person.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		6641C91329F12B8500987195 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6641032F29EF0D010085C68C /* DataStore.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
